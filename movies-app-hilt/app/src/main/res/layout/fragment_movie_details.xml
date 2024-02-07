@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_dark_grey"
+    tools:context=".ui.fragment.MovieDetailsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/movie_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movie_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/movie_descr_img"
+                app:layout_constraintDimensionRatio="w,9:16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="@dimen/movie_details_poster_width"
+                android:layout_height="0dp"
+                android:contentDescription="@string/movie_descr_img"
+                android:layout_marginStart="@dimen/movie_details_padding_horizontal"
+                app:layout_constraintDimensionRatio="h,2:3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/movie_header"
+                app:layout_constraintBottom_toBottomOf="@id/movie_header"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/movie_details_padding_horizontal"
+                app:layout_constraintTop_toBottomOf="@id/movie_backdrop"
+                app:layout_constraintStart_toEndOf="@id/movie_poster"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/movie_title"
+                    style="@style/movieDetailsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/movie_title_placeholder"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/movie_release_date"
+                    style="@style/movieDetailsCaptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/movie_date_placeholder"
+                    app:layout_constraintTop_toBottomOf="@id/movie_title"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/movie_playtime"
+                    style="@style/movieDetailsCaptionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_text_padding"
+                    tools:text="@string/movie_playtime_placeholder"
+                    app:layout_constraintTop_toTopOf="@id/movie_release_date"
+                    app:layout_constraintStart_toEndOf="@id/movie_release_date"/>
+
+                <ImageView
+                    android:id="@+id/movie_star_rate"
+                    android:layout_width="@dimen/movie_details_rate_star_size"
+                    android:layout_height="@dimen/movie_details_rate_star_size"
+                    android:layout_marginTop="@dimen/movie_details_rate_padding"
+                    android:src="@drawable/ic_star_rate"
+                    app:tint="@color/star_rate"
+                    app:layout_constraintTop_toBottomOf="@id/movie_release_date"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/movie_votes"
+                    style="@style/movieDetailsBodyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/movie_vote_placeholder"
+                    app:layout_constraintStart_toEndOf="@id/movie_star_rate"
+                    app:layout_constraintTop_toTopOf="@id/movie_star_rate"
+                    app:layout_constraintBottom_toBottomOf="@id/movie_star_rate"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/progress_loader"
+        layout="@layout/progress_view"
+        android:visibility="gone"
+        android:elevation="@dimen/progress_view_elevation"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

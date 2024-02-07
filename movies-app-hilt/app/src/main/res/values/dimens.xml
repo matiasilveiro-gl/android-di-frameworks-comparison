@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="progress_view_elevation">20dp</dimen>
+
+    <dimen name="default_text_padding">10dp</dimen>
+
+    <!-- Tabs dimensions -->
+    <dimen name="tab_text_size">12sp</dimen>
+    <dimen name="empty_list_msg_size">20sp</dimen>
+
+    <!-- 'Top rated' RecyclerView item dimensions -->
+    <dimen name="toprated_item_corner_radius">10dp</dimen>
+    <dimen name="toprated_item_content_padding">10dp</dimen>
+    <dimen name="toprated_item_image_size">120dp</dimen>
+    <dimen name="toprated_margin_image_content">10dp</dimen>
+    <dimen name="toprated_title_text_size">18sp</dimen>
+    <dimen name="toprated_content_text_size">13sp</dimen>
+    <dimen name="toprated_vote_text_size">16sp</dimen>
+    <dimen name="toprated_vote_text_padding_horizontal">@dimen/list_item_text_padding</dimen>
+    <dimen name="toprated_vote_text_padding_vertical">4dp</dimen>
+    <dimen name="toprated_vote_corner_radius">10dp</dimen>
+    <dimen name="toprated_vote_stroke_width">2dp</dimen>
+
+    <!-- General RecyclerView item dimensions -->
+    <dimen name="list_item_text_padding">10dp</dimen>
+    <dimen name="list_item_padding_between">10dp</dimen>
+
+    <!-- 'Movie details' Fragment dimensions -->
+    <dimen name="movie_details_padding_horizontal">20dp</dimen>
+    <dimen name="movie_details_padding_vertical">20dp</dimen>
+    <dimen name="movie_details_poster_width">120dp</dimen>
+    <dimen name="movie_details_text_padding">10dp</dimen>
+    <dimen name="movie_details_rate_star_size">24dp</dimen>
+    <dimen name="movie_details_rate_padding">6dp</dimen>
+    <dimen name="movie_details_title_text_size">18sp</dimen>
+    <dimen name="movie_details_caption_text_size">13sp</dimen>
+    <dimen name="movie_details_content_text_size">16sp</dimen>
+
+</resources>

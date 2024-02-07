@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_dark_grey"
+    tools:context=".ui.fragment.NowPlayingFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/now_playing_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item_now_playing"
+        tools:spanCount="3"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/empty_view"
+        layout="@layout/empty_list_view"
+        android:visibility="gone"
+        android:elevation="@dimen/progress_view_elevation"/>
+
+    <include
+        android:id="@+id/progress_loader"
+        layout="@layout/progress_view"
+        android:visibility="gone"
+        android:elevation="@dimen/progress_view_elevation"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
