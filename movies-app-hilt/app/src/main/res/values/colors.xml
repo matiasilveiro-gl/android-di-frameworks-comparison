@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App theme colors -->
+    <color name="app_primary">@color/accent_dark_grey</color>
+    <color name="app_secondary">@color/on_surface_dark_grey</color>
+    <color name="app_accent">#E50914</color>
+
+    <color name="progress_view_bg">#8D615D5D</color>
+
+    <!-- -->
+    <color name="surface_dark_grey">#121212</color>
+    <color name="on_surface_dark_grey">#1e1e1e</color>
+    <color name="accent_dark_grey">#383838</color>
+    <color name="on_text_grey">#80FFFFFF</color>
+
+    <color name="star_rate">#FFEB3B</color>
+
+    <!-- TabView related colors -->
+    <color name="tab_color">#80FFFFFF</color>
+    <color name="tab_color_selected">@color/app_accent</color>
+
+</resources>
