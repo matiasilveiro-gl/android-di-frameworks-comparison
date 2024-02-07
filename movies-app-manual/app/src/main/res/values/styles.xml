@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main screen Tabs style -->
+    <style name="tabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabBackground">@color/on_surface_dark_grey</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIconTint">@color/tab_selector</item>
+        <item name="tabInlineLabel">false</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextColor">@color/tab_color</item>
+        <item name="tabSelectedTextColor">@color/app_accent</item>
+        <item name="tabIndicatorColor">@color/app_accent</item>
+        <item name="tabTextAppearance">@style/tabText</item>
+    </style>
+
+    <style name="tabText">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <!-- RecyclerViews styles -->
+    <style name="listItemTitleTextView">
+        <item name="android:paddingTop">@dimen/list_item_text_padding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="topRatedItemTitleTextView">
+        <item name="android:paddingHorizontal">@dimen/list_item_text_padding</item>
+        <item name="android:paddingBottom">@dimen/list_item_text_padding</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">@dimen/toprated_title_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="topRatedItemContentTextView">
+        <item name="android:paddingHorizontal">@dimen/list_item_text_padding</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toprated_content_text_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="topRatedItemVoteTextView">
+        <item name="android:paddingHorizontal">@dimen/toprated_vote_text_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/toprated_vote_text_padding_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/toprated_vote_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <!-- 'Movie details' Fragment styles -->
+    <style name="movieDetailsTitleTextView">
+        <item name="android:paddingVertical">@dimen/movie_details_text_padding</item>
+        <item name="android:textSize">@dimen/movie_details_title_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="movieDetailsCaptionTextView">
+        <item name="android:textSize">@dimen/movie_details_caption_text_size</item>
+        <item name="android:textColor">@color/on_text_grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="movieDetailsBodyTextView">
+        <item name="android:paddingHorizontal">@dimen/movie_details_rate_padding</item>
+        <item name="android:textSize">@dimen/movie_details_content_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
