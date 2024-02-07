@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MoviesApp-Manual</string>
+
+    <!-- Default dialog resources -->
+    <string name="dialog_title_warning">Warning</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="dialog_btn_accept">Accept</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+    <string name="dialog_btn_close">Close</string>
+
+    <!-- General error messages -->
+    <string name="title_error_default">Oops!</string>
+    <string name="msg_error_default">An unexpected error occurred.</string>
+    <string name="msg_error_network">Please check your internet connection and try again.</string>
+    <string name="msg_error_not_found">Resource not found.</string>
+
+    <!-- Movies strings -->
+    <string name="movie_descr_img">Movie image</string>
+    <string name="movie_title_placeholder">My awesome movie</string>
+    <string name="movie_description_placeholder">In the wake of a deadly plane crash and a deadly chemical weapons attack, a group of survivors discover the truth about the people who were on the plane.</string>
+    <string name="movie_vote_placeholder">8.4</string>
+    <string name="movie_date_placeholder">2016</string>
+    <string name="movie_playtime_placeholder">141 min</string>
+    <string name="movie_playtime">%d min</string>
+
+    <!-- General messages -->
+    <string name="movie_empty_list">Oops, we encountered a problem while retrieving the movies list.</string>
+
+</resources>
